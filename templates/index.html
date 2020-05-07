@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block content %}
+
+<h1 class="h1center">Manhattan's MTA Bus System</h1>
+
+<a href="{{ url_for('live_buses') }}">
+    <p style="text-align:center;">Live bus traffic:'</p>
+    <img src="{{ url_for('static', filename='img/via_locations.png') }}" class="centerImage" width="356">
+</a>
+
+{% endblock %}
